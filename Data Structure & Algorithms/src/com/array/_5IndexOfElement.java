@@ -1,4 +1,9 @@
-public class IndexOfElement{
+//5. ⁠Write a Java program to find the index of an array element.
+package com.array;
+
+import java.util.Scanner;
+
+public class _5IndexOfElement{
     public static void main(String args[]){
         System.out.println("enter the size of array");
 		Scanner scan = new Scanner(System.in);
@@ -14,10 +19,10 @@ public class IndexOfElement{
 		}
 		System.out.println("Enter the number that you want to check their index");
 		int specificNum= scan.nextInt();
-        // for(int i=0; i<size; i++){
-        //     if(specificNum==arr[i]){
-        //         System.out.println("The index of the number that you provide "+i);
-        //     }
-        // }
+         for(int i=0; i<size; i++){
+             if(specificNum==arr[i]){
+                 System.out.println("The index of the number that you provide "+i);
+             }
+         }
     }
 }

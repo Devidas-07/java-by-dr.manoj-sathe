@@ -1,8 +1,9 @@
+//4. ⁠Write a Java program to test if an array contains a specific value.
 package com.array;
 
 import java.util.Scanner;
 
-public class SearchingInArray {
+public class _4SearchingInArray {
 
 	public static void main(String[] args) {
 		System.out.println("enter the size of array");

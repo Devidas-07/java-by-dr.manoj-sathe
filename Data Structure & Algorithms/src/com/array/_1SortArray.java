@@ -1,8 +1,10 @@
+//1. Write a Java program to sort a numeric array and a string array.
+
 package com.array;
 
 import java.util.Scanner;
 
-public class SortArray {
+public class _1SortArray {
 
 	public static void main(String[] args) {
 		System.out.println("How many element do you want to insert?");

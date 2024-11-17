@@ -1,8 +1,9 @@
+//2. ⁠Write a Java program to sum values of an array.
 package com.array;
 
 import java.util.Scanner;
 
-public class CalculateAvgOfArray {
+public class _2SumOfArray {
 
 	public static void main(String[] args) {
 		System.out.println("enter the size of array");
@@ -25,8 +26,6 @@ public class CalculateAvgOfArray {
 			
 		}
 		System.out.println("sum of arraya members is "+result);
-		double avg= result/arr.length;
-		System.out.println("Average of values of arrays member is "+avg);
 	}
 
 }
