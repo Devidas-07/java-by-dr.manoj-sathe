@@ -25,7 +25,7 @@ public class _2SumOfArray {
 			result = result+arr[i];
 			
 		}
-		System.out.println("sum of arraya members is "+result);
+		System.out.println("sum of array members is "+result);
 	}
 
 }
