@@ -2,6 +2,7 @@
 
 package com.array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class _1SortArray {
@@ -34,6 +35,11 @@ public class _1SortArray {
 		System.out.println("sorted array is: ");
 		for(int num: arr) {
 			System.out.println(num);
+		}
+		String [] strArr= {"ram", "sham","ganesh","kartik"};
+		Arrays.sort(strArr);
+		for(String s: strArr) {
+			System.out.println(s);
 		}
 		
 	}

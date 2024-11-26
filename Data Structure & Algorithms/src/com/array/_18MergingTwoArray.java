@@ -64,11 +64,11 @@ public class _18MergingTwoArray {
 		}
 		System.out.println("after adding elements to a array");
 		for(int number: a) {
-			System.out.println(number +" ");
+			System.out.print(number +" ");
 		}
 		System.out.println("after adding elements to b array");
 		for(int number: b) {
-			System.out.println(number +" ");
+			System.out.print(number +" ");
 		}
 		
 

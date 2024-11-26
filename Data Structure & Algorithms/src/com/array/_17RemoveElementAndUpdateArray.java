@@ -1,48 +1,36 @@
+//17. ⁠Write a Java program to remove duplicate elements from a given array and return the updated array length.
+//Sample array: [20, 20, 30, 40, 50, 50, 50]
 package com.array;
-
 public class _17RemoveElementAndUpdateArray {
 
 	public static void main(String[] args) {
-		int [] arr= {20, 20, 30, 40, 50, 50};
-		System.out.println("Size of old array: "+arr.length);
-		int count=0;
+		int []arr= {27,35,67,67,23,89,67,99,12};
+		int [] newArr= new int[arr.length];
+		int index= 0;
 		for(int i=0; i<arr.length; i++) {
-			for(int j=i+1; j<arr.length; j++) {
-				if(arr[i]==arr[j]) {
-					System.out.println("i is "+i);
-					System.out.println("j is "+j);
-					System.out.println(arr[i]+ "and"+ arr[j]);
-					System.out.println("in if block");
-					count++;
+			boolean duplicate=false;
+			for(int j=0; j<index; j++) {
+				if(arr[i]==newArr[j]) {
+					duplicate=true;
+					break;
 				}
 			}
-		}
-		System.out.println("count is "+count);
-		int sizeOfarr1 = arr.length-count;
-		System.out.println("size of new arr1 "+sizeOfarr1);
-		int [] arr1= new int [sizeOfarr1];
-		
-		for(int i=0; i<arr.length; i++) {
-			for(int j=i+1; j<arr.length; j++) {
-				if(arr[i]!=arr[j]) {
-
-					
-					System.out.println("in if block");
-					arr1[i]=arr[i];
-					
-					
+				if(duplicate) {
+					System.out.println(arr[i]);
 				}
 				else {
-					System.out.print("duplicate element is"+arr[i]);
-					
+					newArr[index++]=arr[i];
 				}
-			}
+			
 		}
-		System.out.println("After deleting duplicate element, Array is :");
-		for(int x: arr1) {
-			System.out.println(x);
+		System.out.println("after editing ");
+		System.out.println("length of new array is "+index);
+		for(int i=0; i<index; i++) {
+			System.out.println(newArr[i]);
 		}
-
+		
+	
 	}
 
 }
+
