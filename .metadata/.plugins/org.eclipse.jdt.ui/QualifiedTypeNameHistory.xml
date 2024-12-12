@@ -8,7 +8,6 @@
     <fullyQualifiedTypeName name="pack1.Animal"/>
     <fullyQualifiedTypeName name="pack1.Cat"/>
     <fullyQualifiedTypeName name="Test"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="Test2"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="Test3"/>
@@ -21,4 +20,25 @@
     <fullyQualifiedTypeName name="B"/>
     <fullyQualifiedTypeName name="com.pack1.First"/>
     <fullyQualifiedTypeName name="com.pack1.Second"/>
+    <fullyQualifiedTypeName name="java.lang.Readable"/>
+    <fullyQualifiedTypeName name="com.mibs.Rectangle"/>
+    <fullyQualifiedTypeName name="com.mibs.Dog"/>
+    <fullyQualifiedTypeName name="com.mibs.Tiger"/>
+    <fullyQualifiedTypeName name="com.mibs.Animal"/>
+    <fullyQualifiedTypeName name="com.mibs.Lion"/>
+    <fullyQualifiedTypeName name="Employee"/>
+    <fullyQualifiedTypeName name="Manager"/>
+    <fullyQualifiedTypeName name="Circle"/>
+    <fullyQualifiedTypeName name="Rectangle"/>
+    <fullyQualifiedTypeName name="Square"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="multithreading.MyOwnThread"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="ManualException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="multithreading.CustomThread"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="multithreading.Thread1"/>
 </qualifiedTypeNameHistroy>
