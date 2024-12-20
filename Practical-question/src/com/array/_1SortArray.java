@@ -32,16 +32,22 @@ public class _1SortArray {
 			}
 		}
 		//printing sorted array
-		System.out.println("sorted array is: ");
+		System.out.println("sorted array using without predefined methods is: ");
 		for(int num: arr) {
 			System.out.println(num);
 		}
-		String [] strArr= {"ram", "sham","ganesh","kartik"};
-		Arrays.sort(strArr);
-		for(String s: strArr) {
-			System.out.println(s);
+		System.out.println("sorted array using predefined method is: ");
+		Arrays.sort(arr);
+		for(int num: arr) {
+			System.out.println(num);
 		}
 		
+//		String [] strArr= {"ram", "sham","ganesh","kartik"};
+//		Arrays.sort(strArr);
+//		for(String s: strArr) {
+//			System.out.println(s);
+//		}
+//		
 	}
 
 }
