@@ -9,8 +9,9 @@ public class WaitMethod {
 		synchronized (t1) {
 			t1.wait();
 			
-			System.out.println("total is:" +t1.total);
 		}
+		System.out.println("main thread got notification");
+		System.out.println("total is:" +t1.total);
 
 	}
 
