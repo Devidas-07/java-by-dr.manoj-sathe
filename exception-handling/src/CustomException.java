@@ -3,7 +3,7 @@ public class CustomException {
 
 	public static void main(String[] args) {
 		
-		int age=78;
+		int age=1;
 		if(age<10) {
 			try {
 			throw new ManualException("you are british");
@@ -16,7 +16,7 @@ public class CustomException {
 	}
 
 }
-class ManualException extends ArrayIndexOutOfBoundsException{
+class ManualException extends Exception{
 
 	
 	public ManualException(String msg) {

@@ -5,12 +5,14 @@ public class StringBufferAndMultithreading {
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer("MCA in");
 		
-		Person kartik = new Person(sb);
+		Person kartik = new Person(sb," mibs ");
+		
+		Person ganesh = new Person(sb," imcd ");
 		kartik.start();
-		kartik.sb.append(" in imcd");
-		Person ganesh = new Person(sb);
 		ganesh.start();
-		ganesh.sb.append(" in mibs");
+//		System.out.println("in main thread: ");
+//		System.out.println("sb is: "+sb);
+		
 		
 
 	}
@@ -18,12 +20,23 @@ public class StringBufferAndMultithreading {
 }
 class Person extends Thread{
 	StringBuffer sb;
-	public Person(StringBuffer sb) {
+	String app;
+	public Person(StringBuffer sb, String app) {
 		this.sb=sb;
+		this.app = app;
 	}
 	public void run() {
-		
-		System.out.println(sb);
+		for(int i=0; i<5; i++) {
+			System.out.println("I'm going to append the StringBuffer after 1 sec");
+			try {
+				Thread.sleep(1000);
+			}
+			catch(InterruptedException e) {
+				System.out.println("interrupted");
+			}
+			sb.append(app);
+			System.out.println(sb);
+		}
 	}
 }
 

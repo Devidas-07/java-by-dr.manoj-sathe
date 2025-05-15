@@ -4,6 +4,8 @@ public class RunnableInterface {
 
 	public static void main(String[] args) {
 		MyOwnThread t = new MyOwnThread();
+		Thread thread = new Thread(t);
+		thread.start();
 		
 
 	}

@@ -8,6 +8,8 @@ public class StringBuilderAndMultithreading {
 		ramesh.start();
 		Ganesh ganesh = new Ganesh(sb);
 		ganesh.start();
+		System.out.println(sb);
+		sb.append("in IMCD");
 
 	}
 
@@ -19,6 +21,13 @@ class Ramesh extends Thread{
 	}
 	public void run() {
 		System.out.println(sb);
+		try {
+			Thread.sleep(1000);
+		}
+		catch(InterruptedException e) {
+			
+		}
+		sb.append("in mibs");
 	}
 }
 class Ganesh extends Thread{
